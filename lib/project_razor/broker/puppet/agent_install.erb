@@ -5,8 +5,9 @@ set -e
 
 function install_puppet() {
     # TODO add support for versions
+    addgroup --system puppet
+    adduser --system puppet --ingroup puppet
     gem install puppet --no-ri --no-rdoc
-    puppet master --mkusers
 }
 
 function configure_puppet() {
