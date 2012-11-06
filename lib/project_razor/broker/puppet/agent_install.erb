@@ -7,6 +7,7 @@ function install_puppet() {
     # TODO add support for versions
     addgroup --system puppet
     adduser --system puppet --ingroup puppet
+    gem install facter --version=1.6.13
     gem install puppet --no-ri --no-rdoc
 }
 
