@@ -8,7 +8,7 @@ function install_puppet() {
     addgroup --system puppet
     adduser --system puppet --ingroup puppet
     gem install facter --version=1.6.13
-    gem install puppet --no-ri --no-rdoc
+    gem install puppet --version=3.0.1 --no-ri --no-rdoc
 }
 
 function configure_puppet() {
